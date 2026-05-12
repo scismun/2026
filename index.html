@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
@@ -24,8 +23,8 @@
                             blue: '#0A2463', // Updated custom blue
                             dark: '#051232', // Deepened navy for contrast
                             gold: '#F4B942', // Updated custom gold/yellow
-                            light: '#F8FAFC' // Light gray background
-                            
+                            light: '#F8FAFC', // Light gray background
+                            highlight: '#2d936c' // New highlight color added
                         }
                     },
                     fontFamily: {
@@ -67,7 +66,7 @@
         }
     </style>
 </head>
-<body class="font-sans text-gray-800 bg-mun-light antialiased selection:bg-mun-gold selection:text-mun-dark">
+<body class="font-sans text-gray-800 bg-mun-light antialiased selection:bg-mun-highlight selection:text-white">
 
     <!-- Navigation -->
     <nav class="fixed w-full z-50 glass-nav border-b border-gray-200 transition-all duration-300" id="navbar">
@@ -81,16 +80,16 @@
 
                 <!-- Desktop Menu -->
                 <div class="hidden lg:flex items-center space-x-6">
-                    <a href="#about" class="text-gray-600 hover:text-mun-blue font-medium transition-colors">¿Qué es SCISMUN?</a>
-                    <a href="#theme" class="text-gray-600 hover:text-mun-blue font-medium transition-colors">Tema</a>
-                    <a href="#secretariat" class="text-gray-600 hover:text-mun-blue font-medium transition-colors">Secretariado</a>
-                    <a href="#committees" class="text-gray-600 hover:text-mun-blue font-medium transition-colors">Comités</a>
-                    <a href="#countdown-sec" class="bg-mun-blue hover:bg-opacity-90 text-white px-5 py-2 rounded-full font-medium transition-all shadow-md hover:shadow-lg">Cuenta Regresiva</a>
+                    <a href="#about" class="text-gray-600 hover:text-mun-highlight font-medium transition-colors">¿Qué es SCISMUN?</a>
+                    <a href="#theme" class="text-gray-600 hover:text-mun-highlight font-medium transition-colors">Tema</a>
+                    <a href="#secretariat" class="text-gray-600 hover:text-mun-highlight font-medium transition-colors">Secretariado</a>
+                    <a href="#committees" class="text-gray-600 hover:text-mun-highlight font-medium transition-colors">Comités</a>
+                    <a href="#countdown-sec" class="bg-mun-blue hover:bg-mun-highlight text-white px-5 py-2 rounded-full font-medium transition-all shadow-md hover:shadow-lg">Cuenta Regresiva</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
                 <div class="lg:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-mun-blue focus:outline-none p-2">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-mun-highlight focus:outline-none p-2">
                         <i data-lucide="menu" class="w-6 h-6"></i>
                     </button>
                 </div>
@@ -100,11 +99,11 @@
         <!-- Mobile Menu Panel -->
         <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl">
             <div class="px-4 pt-2 pb-6 space-y-2 shadow-inner">
-                <a href="#about" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-mun-blue hover:bg-gray-50 mobile-link">¿Qué es SCISMUN?</a>
-                <a href="#theme" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-mun-blue hover:bg-gray-50 mobile-link">Tema</a>
-                <a href="#secretariat" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-mun-blue hover:bg-gray-50 mobile-link">Secretariado</a>
-                <a href="#committees" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-mun-blue hover:bg-gray-50 mobile-link">Comités</a>
-                <a href="#countdown-sec" class="block px-3 py-3 mt-4 text-center rounded-md text-base font-medium bg-mun-blue text-white hover:bg-opacity-90 mobile-link">Cuenta Regresiva</a>
+                <a href="#about" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-mun-highlight hover:bg-gray-50 mobile-link">¿Qué es SCISMUN?</a>
+                <a href="#theme" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-mun-highlight hover:bg-gray-50 mobile-link">Tema</a>
+                <a href="#secretariat" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-mun-highlight hover:bg-gray-50 mobile-link">Secretariado</a>
+                <a href="#committees" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-mun-highlight hover:bg-gray-50 mobile-link">Comités</a>
+                <a href="#countdown-sec" class="block px-3 py-3 mt-4 text-center rounded-md text-base font-medium bg-mun-blue text-white hover:bg-mun-highlight hover:bg-opacity-90 mobile-link">Cuenta Regresiva</a>
             </div>
         </div>
     </nav>
@@ -235,56 +234,56 @@
             <!-- Secretariat Grid -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
                 <div class="text-center group">
-                    <div class="w-24 h-24 mx-auto rounded-full border-2 border-white/20 overflow-hidden mb-3 transition group-hover:border-mun-gold">
+                    <div class="w-24 h-24 mx-auto rounded-full border-2 border-white/20 overflow-hidden mb-3 transition group-hover:border-mun-highlight">
                         <img src="img/Samira%20Lopez.png" alt="Samira Lopez" class="w-full h-full object-cover">
                     </div>
                     <h4 class="font-bold">Samira Lopez</h4>
                     <p class="text-sm text-gray-400">Secretaria Adjunta</p>
                 </div>
                 <div class="text-center group">
-                    <div class="w-24 h-24 mx-auto rounded-full border-2 border-white/20 overflow-hidden mb-3 transition group-hover:border-mun-gold">
+                    <div class="w-24 h-24 mx-auto rounded-full border-2 border-white/20 overflow-hidden mb-3 transition group-hover:border-mun-highlight">
                         <img src="img/Tamara%20Mansilla.png" alt="Tamara Mansilla" class="w-full h-full object-cover">
                     </div>
                     <h4 class="font-bold">Tamara Mansilla</h4>
                     <p class="text-sm text-gray-400">Secretaria Adjunta</p>
                 </div>
                 <div class="text-center group">
-                    <div class="w-24 h-24 mx-auto rounded-full border-2 border-white/20 overflow-hidden mb-3 transition group-hover:border-mun-gold">
+                    <div class="w-24 h-24 mx-auto rounded-full border-2 border-white/20 overflow-hidden mb-3 transition group-hover:border-mun-highlight">
                         <img src="img/Valeria%20Pineda.png" alt="Valeria Pineda" class="w-full h-full object-cover">
                     </div>
                     <h4 class="font-bold">Valeria Pineda</h4>
                     <p class="text-sm text-gray-400">Secretaria Académica</p>
                 </div>
                 <div class="text-center group">
-                    <div class="w-24 h-24 mx-auto rounded-full border-2 border-white/20 overflow-hidden mb-3 transition group-hover:border-mun-gold">
+                    <div class="w-24 h-24 mx-auto rounded-full border-2 border-white/20 overflow-hidden mb-3 transition group-hover:border-mun-highlight">
                         <img src="img/Nicolas%20Navia.png" alt="Nicolas Navia" class="w-full h-full object-cover">
                     </div>
                     <h4 class="font-bold">Nicolas Navia</h4>
                     <p class="text-sm text-gray-400">Coordinador de Logística</p>
                 </div>
                 <div class="text-center group">
-                    <div class="w-24 h-24 mx-auto rounded-full border-2 border-white/20 overflow-hidden mb-3 transition group-hover:border-mun-gold">
+                    <div class="w-24 h-24 mx-auto rounded-full border-2 border-white/20 overflow-hidden mb-3 transition group-hover:border-mun-highlight">
                         <img src="img/Josefina%20Milan.png" alt="Josefina Milan" class="w-full h-full object-cover">
                     </div>
                     <h4 class="font-bold">Josefina Milan</h4>
                     <p class="text-sm text-gray-400">Sec. de Asuntos Internos</p>
                 </div>
                 <div class="text-center group">
-                    <div class="w-24 h-24 mx-auto rounded-full border-2 border-white/20 overflow-hidden mb-3 transition group-hover:border-mun-gold">
+                    <div class="w-24 h-24 mx-auto rounded-full border-2 border-white/20 overflow-hidden mb-3 transition group-hover:border-mun-highlight">
                         <img src="img/Adrian%20Terceros.png" alt="Adrian Terceros" class="w-full h-full object-cover">
                     </div>
                     <h4 class="font-bold">Adrian Terceros</h4>
                     <p class="text-sm text-gray-400">Director de Finanzas</p>
                 </div>
                 <div class="text-center group">
-                    <div class="w-24 h-24 mx-auto rounded-full border-2 border-white/20 overflow-hidden mb-3 transition group-hover:border-mun-gold">
+                    <div class="w-24 h-24 mx-auto rounded-full border-2 border-white/20 overflow-hidden mb-3 transition group-hover:border-mun-highlight">
                         <img src="img/Rodrigo%20Solares.png" alt="Rodrigo Solares" class="w-full h-full object-cover">
                     </div>
                     <h4 class="font-bold">Rodrigo Solares</h4>
                     <p class="text-sm text-gray-400">Director de Marketing</p>
                 </div>
                 <div class="text-center group">
-                    <div class="w-24 h-24 mx-auto rounded-full border-2 border-white/20 overflow-hidden mb-3 transition group-hover:border-mun-gold">
+                    <div class="w-24 h-24 mx-auto rounded-full border-2 border-white/20 overflow-hidden mb-3 transition group-hover:border-mun-highlight">
                         <img src="img/Alexia%20Quiroga.png" alt="Alexia Quiroga" class="w-full h-full object-cover">
                     </div>
                     <h4 class="font-bold">Alexia Quiroga</h4>
@@ -480,36 +479,31 @@
             <p class="text-mun-gold font-bold text-xl mb-12 tracking-wide uppercase">18 de Junio de 2026</p>
             
             <div class="flex flex-wrap justify-center gap-4 md:gap-8">
-                <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 w-32 md:w-40 shadow-xl">
+                <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 w-32 md:w-40 shadow-xl hover:border-mun-highlight transition-colors">
                     <span id="days" class="block text-4xl md:text-6xl font-bold text-white mb-2">00</span>
                     <span class="text-mun-gold text-xs md:text-sm font-bold uppercase tracking-wider">Días</span>
                 </div>
-                <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 w-32 md:w-40 shadow-xl">
+                <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 w-32 md:w-40 shadow-xl hover:border-mun-highlight transition-colors">
                     <span id="hours" class="block text-4xl md:text-6xl font-bold text-white mb-2">00</span>
                     <span class="text-mun-gold text-xs md:text-sm font-bold uppercase tracking-wider">Horas</span>
                 </div>
-                <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 w-32 md:w-40 shadow-xl">
+                <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 w-32 md:w-40 shadow-xl hover:border-mun-highlight transition-colors">
                     <span id="minutes" class="block text-4xl md:text-6xl font-bold text-white mb-2">00</span>
                     <span class="text-mun-gold text-xs md:text-sm font-bold uppercase tracking-wider">Minutos</span>
                 </div>
-                <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 w-32 md:w-40 shadow-xl">
+                <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 w-32 md:w-40 shadow-xl hover:border-mun-highlight transition-colors">
                     <span id="seconds" class="block text-4xl md:text-6xl font-bold text-white mb-2">00</span>
                     <span class="text-mun-gold text-xs md:text-sm font-bold uppercase tracking-wider">Segundos</span>
                 </div>
             </div>
 
             <div class="mt-16 flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://forms.gle/1sjRYN8QEZsfB7Zd9" class="bg-mun-gold hover:bg-yellow-500 text-mun-dark px-8 py-4 rounded-full font-bold transition-all shadow-lg text-center">
+                <a href="https://forms.gle/AK7Mei1wJSohrVid7" class="bg-mun-gold hover:bg-yellow-500 text-mun-dark px-8 py-4 rounded-full font-bold transition-all shadow-lg text-center">
                     Registro Early Bird
                 </a>
-                
-                </a>
-                <a href="https://forms.gle/AK7Mei1wJSohrVid7" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-bold transition-all hover:bg-white/10 text-center">
+                <a href="https://forms.gle/1sjRYN8QEZsfB7Zd9" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-bold transition-all hover:bg-white/10 hover:border-mun-highlight hover:text-mun-highlight text-center">
                     Registrarse como Mesa
                 </a>
-            </div>
-        </div>
-    </section> 
             </div>
         </div>
     </section>
@@ -529,10 +523,10 @@
                         Empoderando a la próxima generación de líderes globales a través de la diplomacia y el debate en Santa Cruz, Bolivia.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-mun-gold transition-colors">
+                        <a href="#" class="text-gray-400 hover:text-mun-highlight transition-colors">
                             <i data-lucide="instagram" class="w-5 h-5"></i>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-mun-gold transition-colors">
+                        <a href="#" class="text-gray-400 hover:text-mun-highlight transition-colors">
                             <i data-lucide="facebook" class="w-5 h-5"></i>
                         </a>
                     </div>
@@ -541,11 +535,11 @@
                 <div>
                     <h4 class="text-mun-gold font-bold mb-4 uppercase text-sm tracking-wider">Enlaces Rápidos</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="https://forms.gle/1sjRYN8QEZsfB7Zd9" class="hover:text-white transition-colors">Registro Early Bird</a></li>
+                        <li><a href="https://forms.gle/AK7Mei1wJSohrVid7" class="hover:text-mun-highlight transition-colors">Registro Early Bird</a></li>
                     
-                        <li><a href="https://forms.gle/AK7Mei1wJSohrVid7" class="hover:text-white transition-colors">Registrarse como Mesa</a></li>
-                        <li><a href="#theme" class="hover:text-white transition-colors">Tema: Beyond Borders</a></li>
-                        <li><a href="#committees" class="hover:text-white transition-colors">Ver Comités</a></li>
+                        <li><a href="https://forms.gle/1sjRYN8QEZsfB7Zd9" class="hover:text-mun-highlight transition-colors">Registrarse como Mesa</a></li>
+                        <li><a href="#theme" class="hover:text-mun-highlight transition-colors">Tema: Beyond Borders</a></li>
+                        <li><a href="#committees" class="hover:text-mun-highlight transition-colors">Ver Comités</a></li>
                     </ul>
                 </div>
 
@@ -558,7 +552,7 @@
                         </li>
                         <li class="flex items-center gap-2">
                             <i data-lucide="mail" class="w-4 h-4 text-mun-gold flex-shrink-0"></i>
-                            <a href="mailto:scismun@scis-bo.com" class="hover:text-white transition-colors">scismun@scis-bo.com</a>
+                            <a href="mailto:scismun@scis-bo.com" class="hover:text-mun-highlight transition-colors">scismun@scis-bo.com</a>
                         </li>
                     </ul>
                 </div>
@@ -621,6 +615,7 @@
 
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)); // Fixed missing minutes logic
             const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             document.getElementById("days").innerText = days.toString().padStart(2, '0');
